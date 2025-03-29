@@ -1,37 +1,35 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   MapContainer,
   TileLayer,
   Marker,
   Popup,
   FeatureGroup,
-  Circle,
-  useMapEvents,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-const MapComponent = () => {
-  const estilo = {
-    width: "100vw",
-    height: "100vh",
-  };
+import "../styles/componets/Map.css";
+import PopupComponent from "./PopupComponent";
 
+const MapComponent = () => {
   return (
     <>
       <MapContainer
-        style={estilo}
+        className="map"
         center={[-15.793889, -47.882778]}
-        zoom={15}
+        zoom={12}
         scrollWheelZoom={true}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
         />
-
         <FeatureGroup>
-          <Popup minWidth={300}></Popup>
-          <Circle center={[-15.793889, -47.882778]} radius={200} />
+          <Marker position={[-15.793889, -47.882778]}>
+            <Popup minWidth={400}>
+              <PopupComponent />
+            </Popup>
+          </Marker>
         </FeatureGroup>
       </MapContainer>
     </>

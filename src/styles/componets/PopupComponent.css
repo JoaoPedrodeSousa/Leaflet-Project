@@ -1,0 +1,50 @@
+.popup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  align-items: center;
+  border-radius: 6px;
+  color: rgb(0, 48, 90);
+  background-color: rgb(213, 226, 255);
+  width: 400px;
+  padding: 5px;
+}
+
+.popup-coordenates {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 0 0 0.15rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.popup-image {
+  place-self: center;
+  margin: 0rem;
+}
+
+.popup-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.popup-coordenates p {
+  margin: 0px;
+}
+
+.popup-information h1 {
+  font-size: 1.25rem;
+  padding: 0 0 0 0.15rem;
+  border-bottom: 0.15rem solid rgb(9, 117, 212);
+}
+
+.popup-information p {
+  padding: 0 0 0 0.15rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: bold;
+}
