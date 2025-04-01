@@ -6,10 +6,8 @@ import {
   Popup,
   FeatureGroup,
 } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-
 import "../styles/componets/Map.css";
-import PopupComponent from "./PopupComponent";
+import PopupComponent from "./PopupComponent.jsx";
 
 const MapComponent = () => {
   return (
@@ -27,7 +25,7 @@ const MapComponent = () => {
         <FeatureGroup>
           <Marker position={[-15.793889, -47.882778]}>
             <Popup minWidth={400}>
-              <PopupComponent />
+              <PopupComponent src="/src/assets/imagem1.jpg" />
             </Popup>
           </Marker>
         </FeatureGroup>

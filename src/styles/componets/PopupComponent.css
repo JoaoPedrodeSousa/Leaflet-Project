@@ -36,7 +36,7 @@
 .popup-information h1 {
   font-size: 1.25rem;
   padding: 0 0 0 0.15rem;
-  border-bottom: 0.15rem solid rgb(9, 117, 212);
+  border-top: 0.15rem solid rgb(9, 117, 212);
 }
 
 .popup-information p {

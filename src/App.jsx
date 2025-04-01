@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import MapComponent from "./components/MapComponent.jsx";
 import "leaflet/dist/leaflet.css";
 import "./styles/global.css";
+import Home from "./components/Home.jsx";
 
 function App() {
   return (
     <>
-      <MapComponent />
+      <Home />
     </>
   );
 }
